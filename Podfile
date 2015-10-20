@@ -7,8 +7,8 @@ use_frameworks!
 
 target 'CustomTableViewCellsExample' do
 
-pod 'Alamofire', '~> 3.0'
-pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+pod 'Alamofire'
+pod "SwiftyJSON", ">= 2.2"
 pod "PKHUD"
 
 end

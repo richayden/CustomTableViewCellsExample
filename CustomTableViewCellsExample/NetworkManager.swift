@@ -21,19 +21,18 @@ class NetworkManager: NSObject {
     
     func loadCrafts() -> Void {
         
-        let url = "https://api.myjson.com/bins/38qaw"
-        
-        Alamofire.request(.GET, url, parameters: ["foo": "bar"])
+        Alamofire.request(.GET, "https://api.myjson.com/bins/13u0k", parameters: ["foo": "bar"])
             .responseJSON { response in
-                
                 print(response.request)  // original URL request
                 print(response.response) // URL response
                 print(response.data)     // server data
-                print(response.result)
-                let jsonArray = JSON(response.data!)
-                for (index, subJson) in jsonArray {
-                    
-                    print("\(index) \(subJson)")
+                print(response.result)   // result of response serialization
+                
+                if let JSON = response.result.value {
+                    let num = JSON["number"] as! Int
+                    let str = JSON["string"] as! String
+                    print("number: \(num)")
+                    print("string: \(str)")
                 }
         }
 /*            let json = JSON(response)
