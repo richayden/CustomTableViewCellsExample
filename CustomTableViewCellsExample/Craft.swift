@@ -13,6 +13,7 @@ class Craft : NSObject {
     var title:String?
     var artist:String?
     var price:Float?
+    var weight:Float?
     var imageURL:String?
     var comments:[String]?
     var like:Bool?
