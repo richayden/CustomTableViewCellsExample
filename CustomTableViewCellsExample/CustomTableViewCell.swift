@@ -8,10 +8,24 @@
 
 import UIKit
 
+protocol CustomTableViewCellDelegate : NSObjectProtocol {
+    func buyButtonHit()
+    
+}
+
 class CustomTableViewCell: UITableViewCell {
 
+    @IBAction func orderButtonHit(sender: AnyObject) {
+        
+        if let delegate_ = self.delegate {
+            delegate_.buyButtonHit()
+            
+        }
+    }
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
+    
+    var delegate:CustomTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()

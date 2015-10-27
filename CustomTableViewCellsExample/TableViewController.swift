@@ -9,7 +9,7 @@
 import UIKit
 import PKHUD
 
-class TableViewController: UITableViewController, NetworkManagerDelegate {
+class TableViewController: UITableViewController, NetworkManagerDelegate, CustomTableViewCellDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,12 @@ class TableViewController: UITableViewController, NetworkManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - CustomTableViewCellDelegate
+    func buyButtonHit() {
+        
+        print("buy")
+    }
+
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -65,10 +71,14 @@ class TableViewController: UITableViewController, NetworkManagerDelegate {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("customCellId", forIndexPath: indexPath) as! CustomTableViewCell
 
         
         // Configure the cell...
+        
+        cell.delegate = self
+        
         let dataManager = DataManager.sharedInstance
         let craft = dataManager.getCraftAtIndex(indexPath.row)
 //        if let craft_ = craft, textLabel_ = cell.textLabel {

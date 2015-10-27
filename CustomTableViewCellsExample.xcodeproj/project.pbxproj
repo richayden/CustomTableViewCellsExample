@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3257CEED8567015D0E85B97B /* Pods_CustomTableViewCellsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C99D86D8AE268136EC7B42 /* Pods_CustomTableViewCellsExample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C13019D21BD9A62D0000723A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13019D11BD9A62D0000723A /* CustomTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		3257CEED8567015D0E85B97B /* Pods_CustomTableViewCellsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C99D86D8AE268136EC7B42 /* Pods_CustomTableViewCellsExample.framework */; };
+		C13019D21BD9A62D0000723A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13019D11BD9A62D0000723A /* CustomTableViewCell.swift */; };
 		C14CBF311BD05E2F00767EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF301BD05E2F00767EF7 /* AppDelegate.swift */; };
 		C14CBF331BD05E2F00767EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF321BD05E2F00767EF7 /* ViewController.swift */; };
 		C14CBF361BD05E2F00767EF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14CBF341BD05E2F00767EF7 /* Main.storyboard */; };
 		C14CBF381BD05E2F00767EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14CBF371BD05E2F00767EF7 /* Assets.xcassets */; };
 		C14CBF3B1BD05E2F00767EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14CBF391BD05E2F00767EF7 /* LaunchScreen.storyboard */; };
-		C14CBF451BD05EF300767EF7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF441BD05EF300767EF7 /* DataManager.swift */; settings = {ASSET_TAGS = (); }; };
-		C14CBF471BD05FBB00767EF7 /* Craft.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF461BD05FBB00767EF7 /* Craft.swift */; settings = {ASSET_TAGS = (); }; };
-		C14CBF491BD0628800767EF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF481BD0628800767EF7 /* NetworkManager.swift */; settings = {ASSET_TAGS = (); }; };
-		C14CBF4F1BD0712400767EF7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF4E1BD0712400767EF7 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C14CBF451BD05EF300767EF7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF441BD05EF300767EF7 /* DataManager.swift */; };
+		C14CBF471BD05FBB00767EF7 /* Craft.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF461BD05FBB00767EF7 /* Craft.swift */; };
+		C14CBF491BD0628800767EF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF481BD0628800767EF7 /* NetworkManager.swift */; };
+		C14CBF4F1BD0712400767EF7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14CBF4E1BD0712400767EF7 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
